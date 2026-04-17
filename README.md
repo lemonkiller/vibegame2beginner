@@ -57,8 +57,8 @@
 - [术语对照表](docs/appendix-a-glossary.md) - 中英双语术语速查
 - [推荐资源](docs/appendix-b-resources.md) - 工具、教程、社区
 - [提示词模板库](docs/appendix-c-prompt-templates.md) - 复制即用的提示词
-- [工具对照表](docs/appendix-d-tool-comparison.md) - 各工具优缺点横评
-- [技术栈对比](docs/appendix-e-tech-stack-comparison.md) - 游戏开发技术栈选型指南（含AI编程友好度评分）
+- [工具对照表](docs/appendix-d-tool-comparison.md) - AI编程工具、引擎、框架优缺点横评
+- [技术栈对比](docs/appendix-e-tech-stack-comparison.md) - 游戏开发技术栈选型指南（含AI编程友好度评分、性能因素对比）
 
 ## 技术栈
 
@@ -69,6 +69,7 @@
 - **AI 对 Lua 的理解非常好**，生成的代码质量高
 - **跨平台**，一次编写，Windows/Mac/Linux/手机都能跑
 - **社区活跃**，遇到问题容易找到答案
+- **性能足够**，2D同屏精灵上万无压力（《Balatro》即用LÖVE2D开发，销量百万级）
 
 ## 代码示例
 
