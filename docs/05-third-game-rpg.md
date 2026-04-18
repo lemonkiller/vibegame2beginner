@@ -122,28 +122,13 @@ NPC: "你好，陌生人。你是来拯救村子的吗？"
 
 ### 对话数据格式
 
-```lua
--- 对话数据示例
-dialogues = {
-    elder = {
-        {
-            text = "你好，年轻的冒险者。我们的村庄正面临危机......",
-            choices = {
-                {text = "告诉我更多", next = "elder_2"},
-                {text = "我没兴趣", next = "elder_dismiss"},
-            }
-        },
-        elder_2 = {
-            text = "北方的巨龙苏醒了，村庄随时可能被摧毁。",
-            choices = {
-                {text = "我来帮忙！", next = "elder_accept"},
-                {text = "报酬是多少？", next = "elder_pay"},
-            }
-        },
-        -- ...
-    }
-}
-```
+对话数据用Lua表定义，核心结构如下：
+
+- 每个NPC有一组对话，每段对话包含 `text`（对话文字）和 `choices`（选项列表）
+- 每个选项包含 `text`（选项文字）和 `next`（跳转到的下一段对话ID）
+- 不同选项跳转到不同的后续对话，形成"对话树"
+
+> 完整的对话数据示例和格式说明见[附录C：提示词模板库](appendix-c-prompt-templates.md#RPG)。
 
 ---
 

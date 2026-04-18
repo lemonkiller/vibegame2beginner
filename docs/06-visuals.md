@@ -135,30 +135,15 @@ my_game/
 
 最简单的动画方式：准备几张图片，按帧切换。
 
-```lua
--- 帧动画
-local frames = {
-    love.graphics.newImage("player_1.png"),
-    love.graphics.newImage("player_2.png"),
-    love.graphics.newImage("player_3.png"),
-    love.graphics.newImage("player_4.png"),
-}
-local current_frame = 1
-local frame_timer = 0
-local frame_speed = 0.15  -- 每帧0.15秒
+**关键实现思路**：
+- 在 `love.load` 中把所有帧图片加载到数组
+- 维护一个帧计时器和当前帧号
+- 在 `love.update` 中累加计时器，超过帧间隔就切换到下一帧
+- 在 `love.draw` 中绘制当前帧图片
 
-function love.update(dt)
-    frame_timer = frame_timer + dt
-    if frame_timer >= frame_speed then
-        frame_timer = 0
-        current_frame = current_frame % #frames + 1
-    end
-end
+> 让AI帮你做更简单：
 
-function love.draw()
-    love.graphics.draw(frames[current_frame], player.x, player.y)
-end
-```
+ > 帮我在 LÖVE2D 中实现角色的4帧行走动画。图片文件是 player_1.png ~ player_4.png，每帧显示0.15秒，循环播放。
 
 ### 代码动画
 
@@ -231,4 +216,4 @@ end
 
 好看的游戏还需要好听。下一章，我们让游戏有声音。
 
-[第7章：让游戏变好听 →](07-audio.md)
+[第8章：让游戏变好听 →](08-audio.md)

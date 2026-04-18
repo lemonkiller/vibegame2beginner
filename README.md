@@ -32,9 +32,10 @@
 第4章  第二个游戏      → 理解游戏逻辑，做打砖块
 第5章  第三个游戏      → 让AI成为游戏的一部分（RPG对话冒险）
 第6章  让游戏变好看    → AI生成美术素材
-第7章  让游戏变好听    → AI生成音乐和音效
-第8章  从原型到发布    → 让别人也能玩到你的游戏
-第9章  避坑指南        → 少走弯路的经验总结
+第7章  让游戏有手感    → 7种Game Feel技术
+第8章  让游戏变好听    → AI生成音乐和音效
+第9章  从原型到发布    → 让别人也能玩到你的游戏
+第10章 避坑指南        → 少走弯路的经验总结
 ```
 
 ## 章节内容
@@ -48,9 +49,10 @@
 | [第4章 第二个游戏](docs/04-second-game-breakout.md) | 一个有碰撞检测的打砖块 | ⭐⭐ | 2小时 |
 | [第5章 第三个游戏](docs/05-third-game-rpg.md) | 一个AI驱动的RPG对话游戏 | ⭐⭐⭐ | 3小时 |
 | [第6章 让游戏变好看](docs/06-visuals.md) | 漂亮的游戏画面 | ⭐⭐ | 2小时 |
-| [第7章 让游戏变好听](docs/07-audio.md) | 游戏背景音乐和音效 | ⭐⭐ | 1小时 |
-| [第8章 从原型到发布](docs/08-publishing.md) | 别人能玩到的在线游戏 | ⭐⭐⭐ | 2小时 |
-| [第9章 避坑指南](docs/09-pitfalls.md) | 少走弯路的心法 | ⭐ | 30分钟 |
+| [第7章 让游戏有手感](docs/07-game-feel.md) | 游戏手感与反馈 | ⭐⭐ | 1小时 |
+| [第8章 让游戏变好听](docs/08-audio.md) | 游戏背景音乐和音效 | ⭐⭐ | 1小时 |
+| [第9章 从原型到发布](docs/09-publishing.md) | 别人能玩到的在线游戏 | ⭐⭐⭐ | 2小时 |
+| [第10章 避坑指南](docs/10-pitfalls.md) | 少走弯路的心法 | ⭐ | 30分钟 |
 
 ## 附录
 
@@ -59,6 +61,8 @@
 - [提示词模板库](docs/appendix-c-prompt-templates.md) - 复制即用的提示词
 - [工具对照表](docs/appendix-d-tool-comparison.md) - AI编程工具、引擎、框架优缺点横评
 - [技术栈对比](docs/appendix-e-tech-stack-comparison.md) - 游戏开发技术栈选型指南（含AI编程友好度评分、性能因素对比）
+- [AI多智能体协作](docs/appendix-f-ai-agents-workflow.md) - 多AI角色分工协作开发
+- [轻量级测试](docs/appendix-g-lightweight-testing.md) - 给AI写的代码做体检
 
 ## 技术栈
 
